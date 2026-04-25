@@ -1,0 +1,177 @@
+
+#infinite-grid-menu-canvas {
+  cursor: grab;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+}
+
+#infinite-grid-menu-canvas:active {
+  cursor: grabbing;
+}
+
+/* Atmospheric Vignette Overlay */
+.vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+  /* Fades edges to background color for a focus-lens effect */
+  background: radial-gradient(circle, transparent 20%, rgba(255,255,255,1) 100%);
+}
+
+.dark .vignette {
+  background: radial-gradient(circle, transparent 20%, rgba(0,0,0,1) 100%);
+}
+
+/* Static Section Title - Top Middle Fixed */
+.section-title {
+  user-select: none;
+  position: absolute;
+  font-weight: 900;
+  font-size: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 8%;
+  color: #8b5cf6; /* accent-violet */
+  z-index: 45;
+  text-transform: uppercase;
+  letter-spacing: 0.8em;
+  opacity: 0.8;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Focused Circle Marker - Positioned at bottom edge of central image */
+.action-button {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  background: #8b5cf6; /* accent-violet */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.4);
+}
+
+.dark .action-button {
+  border-color: #000;
+}
+
+/* Item Name - Left Center (Matches Image) */
+.face-title {
+  user-select: none;
+  position: absolute;
+  font-weight: 900;
+  font-size: 4.5rem;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1a1a1a;
+  pointer-events: none;
+  z-index: 40;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.dark .face-title {
+  color: #fff;
+}
+
+.action-button-icon {
+  user-select: none;
+  position: relative;
+  color: #fff;
+  top: 0;
+  font-size: 24px;
+}
+
+.face-title.active {
+  opacity: 1;
+  transform: translate(0, -50%);
+  pointer-events: auto;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.face-title.inactive {
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-40px, -50%);
+  transition: 0.4s ease;
+}
+
+/* Item Description - Right Center (Matches Image) */
+.face-description {
+  user-select: none;
+  position: absolute;
+  max-width: 15ch;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  right: 8%;
+  color: #4a4a4a;
+  z-index: 40;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: left;
+  letter-spacing: -0.02em;
+}
+
+.dark .face-description {
+  color: #fff;
+}
+
+.face-description.active {
+  opacity: 1;
+  transform: translate(0, -50%);
+  pointer-events: auto;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.face-description.inactive {
+  pointer-events: none;
+  transform: translate(40px, -50%);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+/* Correct Arrow Button Placement - Anchored relative to central sphere */
+.action-button.active {
+  bottom: 12%;
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.action-button.inactive {
+  bottom: 8%;
+  transform: translateX(-50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 1280px) {
+  .face-title {
+    font-size: 3rem;
+  }
+  .face-description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .face-title,
+  .face-description,
+  .section-title {
+    display: none;
+  }
+}

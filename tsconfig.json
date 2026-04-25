@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "moduleResolution": "bundler",
+    /* Change isolatedModules to true to help Vite/Esbuild */
+    "isolatedModules": true, 
+    /* Remove 'force' if you're getting 500 errors on imports */
+    "moduleDetection": "auto", 
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    /* This can sometimes cause dev-server issues in certain environments */
+    "allowImportingTsExtensions": false, 
+    "noEmit": true,
+    /* Essential for Vite */
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist", ".vercel"]
+}

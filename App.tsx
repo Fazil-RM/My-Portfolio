@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LandingView from './views/LandingView';
 import AboutPage from './views/AboutPage';
-import WorkPage, { ProjectDetailPage } from './views/WorkPage'; // Imported the new page
+import WorkPage, { ProjectDetailPage } from './views/WorkPage'; 
 import BlogPage from './views/BlogPage';
 import BlogDetailPage from './views/BlogDetailPage';
 import GuestbookPage from './views/GuestbookPage';
@@ -49,7 +49,7 @@ const personSchema = {
       "url": "https://mohamedfazilrm.dev",
       "image": "https://mohamedfazilrm.dev/profile-photo.jpg",
       "description": "Mohamed Fazil RM is a Developer and Data Analyst based in Chennai. He specializes in Software Development and Automation development.",
-      "jobTitle": ["Automation Developer", "Founder", "Full Stack Developer", "Data Analyst"],
+      "jobTitle": ["Automation Developer", "Founder", "Full Stack Developer", "Data Analyst" , 'Software Developer'],
       "gender": "Male",
       "nationality": "Indian",
       "email": "mohamedfazilrm@gmail.com",
@@ -87,14 +87,15 @@ const personSchema = {
         "url": "https://fosautomations.com/"
       },
       "sameAs": [ 
-        "https://www.linkedin.com/in/mohamedfazil2005", // linkedin
+        "https://www.linkedin.com/in/fazil-rm/", // linkedin
         "https://www.crunchbase.com/person/fazil-rm", //crunch base
         "https://www.youtube.com/@Fazil_RM", // youtube
         "https://www.instagram.com/__fazil_rm__",  // insta
-        "https://leetcode.com/u/Mohamed_Fazil_",// leetcode
-        "https://github.com/Mohamed-Fazil-RM", //github
+        "https://www.facebook.com/theFazilRM", //facebook
+        "https://leetcode.com/u/Fazil-RM/",// leetcode
+        "https://github.com/Fazil-RM", //github
         "https://www.trustpilot.com/review/mohamedfazilrm.dev", // trustpilot
-        "https://medium.com/@mohamedfazilrm5", //Medium 
+        "https://medium.com/@Fazil-RM", //Medium 
         "https://www.kaggle.com/mohamedfazilrm", // kaggle
         "https://fosautomations.com/team/fazil-rm" // fos automations
       ],
@@ -219,7 +220,7 @@ const personSchema = {
   const navigateTo = (view: ViewState, postId?: string) => {
     if (view === 'home') navigate('/');
     else if (view === 'blog-detail' && postId) navigate(`/blog/${postId}`);
-    else if (view === 'work-detail' && postId) navigate(`/work/${postId}`); // Added work detail navigation logic
+    else if (view === 'work-detail' && postId) navigate(`/work/${postId}`); 
     else navigate(`/${view}`);
   };
 

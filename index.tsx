@@ -21,9 +21,6 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      {/* Auth provider wrap. 
-          Ensure VITE_GOOGLE_CLIENT_ID is defined in your .env file 
-      */}
       <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID || ""}>
         <App />
       </GoogleOAuthProvider>

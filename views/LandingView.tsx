@@ -22,9 +22,9 @@ return (
     <Hero onNavigate={onNavigate} />
       <SEO 
   title="Full Stack Developer & Data Scientist" 
-  description="Fazil R M - Portfolio of a Chennai-based developer specializing in React, Python, and Automation. Founder of FOS Automations and LearnEzily."
+  description="Fazil RM is a software developer. His work focuses on building high-performance web applications, scalable automation systems, and data-driven solutions. Pursuing a BS in Data Science from IIT Madras and a B.Sc in Mathematics."
 />
-      {/* Professional Bento Grid Section */}
+      {/*  Bento Grid Section */}
       <div className="pb-20">
         <BentoGrid isDark={isDark} onNavigate={onNavigate} />
       </div>

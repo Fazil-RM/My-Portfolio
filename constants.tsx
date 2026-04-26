@@ -1,77 +1,44 @@
 
-import { Project, TimelineItem, BlogPost, GuestbookEntry } from './types';
+import { TimelineItem, BlogPost } from './types';
 
-export const PROJECTS: Project[] = [
-  {
-    id: '1',
-    title: 'Nexus AI Platform',
-    description: 'A cutting-edge SaaS for managing multiple LLM providers with a unified interface.',
-    tags: ['React', 'Next.js', 'PostgreSQL'],
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1632&auto=format&fit=crop',
-    demoUrl: '#',
-    repoUrl: '#',
-    gridSpan: 'md:col-span-2 md:row-span-2'
-  },
-  {
-    id: '2',
-    title: 'CryptoTracker',
-    description: 'Real-time crypto assets dashboard with advanced charting and news integration.',
-    tags: ['TypeScript', 'D3.js', 'Tailwind'],
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1632&auto=format&fit=crop',
-    demoUrl: '#',
-    repoUrl: '#'
-  },
-  {
-    id: '3',
-    title: 'FlowCMS',
-    description: 'A headless CMS focused on developer experience and speed.',
-    tags: ['Node.js', 'GraphQL', 'React'],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1626&auto=format&fit=crop',
-    demoUrl: '#',
-    repoUrl: '#'
-  },
-  {
-    id: '4',
-    title: 'Orbit Design System',
-    description: 'A lightweight and accessible UI library for building fast interfaces.',
-    tags: ['React', 'Framer Motion'],
-    image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1628&auto=format&fit=crop',
-    demoUrl: '#',
-    repoUrl: '#',
-    gridSpan: 'md:col-span-2'
-  }
-];
+
 
 export const CURATED_WORKS = [
   {
     image: 'https://ik.imagekit.io/fazil/Logo-png.png',
     title: 'LearnEzily',
     description: 'Study, practice, and boost your productivity online.',
-    link: '#'
+    link: 'https://learnezily.app/'
   },
   {
-    image: 'https://ik.imagekit.io/fazil/Screenshot%202025-12-29%20183740.png',
-    title: 'Portfolio',
-    description: 'Bridging code and data to build impactful solutions.',
-    link: '#'
+    image: 'https://ik.imagekit.io/fazil/Slate.png?updatedAt=1767706591603',
+    title: 'Slate',
+    description: 'Exclusive Study & Notify application for IITM.',
+    link: 'https://play.google.com/store/apps/details?id=slate.fosautomations.com'
   },
   {
     image: 'https://ik.imagekit.io/fazil/Screenshot%202025-12-29%20200534.png',
     title: 'Shazil Tech',
     description: 'Expert development and powerful automation solutions.',
-    link: '#'
+    link: 'https://shazil-tech.vercel.app/'
   },
   {
     image: 'https://ik.imagekit.io/fazil/Screenshot%202025-12-29%20202117.png',
     title: 'Alchemeal',
     description: 'Create the perfect meal from what you have.',
-    link: '#'
+    link: 'work'
   },
   {
     image: 'https://ik.imagekit.io/fazil/Screenshot%202025-12-06%20201237.png',
     title: 'Hexa play',
     description: 'The ultimate club for competitive local gaming.',
-    link: '#'
+    link: 'work'
+  },
+    {
+    image: 'https://ik.imagekit.io/fazil/spendwise_logo.png?updatedAt=1772796021012',
+    title: 'SpendWise',
+    description: 'An Expense & Budget Tracker with AI Analysis Report',
+    link: 'work'
   }
 ];
 

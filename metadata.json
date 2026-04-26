@@ -1,5 +1,22 @@
 {
-  "name": "Mohamed Fazil RM",
-  "description": "A high-performance professional developer portfolio featuring 3D globes, interactive bento grids, and fluid motion design.",
-  "requestFramePermissions": []
+  "name": "Fazil RM",
+  "description": "Fazil RM is a software developer and co-founder of LearnEzily. His work focuses on building high-performance web applications, scalable automation systems, and data-driven solutions. Pursuing a BS in Data Science from IIT Madras and a B.Sc in Mathematics.",
+  "keywords": [
+    "Fazil RM",
+    "thefazilrm",
+    "Co-founder LearnEzily",
+    "IIT Madras Data Science",
+    "Automation Developer",
+    "Software Engineer Chennai",
+    "Web Security",
+    "FOS Automations"
+  ],
+  "author": "Fazil RM",
+  "theme_color": "#7c3aed",
+  "openGraph": {
+    "type": "website",
+    "locale": "en_US",
+    "url": "https://mohamedfazilrm.dev",
+    "site_name": "Fazil RM Portfolio"
+  }
 }

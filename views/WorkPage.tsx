@@ -5,7 +5,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 // Lightweight brand icons
 import { 
   SiReact, SiTypescript, SiNextdotjs, SiNodedotjs, SiMake,
-  SiTailwindcss, SiFramer, SiD3, SiFigma, SiPython 
+  SiTailwindcss, SiFramer, SiD3, SiFigma, SiPython, 
+  SiFirebase
 } from 'react-icons/si';
 
 import SEO from '../components/SEO';
@@ -31,10 +32,36 @@ const TechIcons = {
   Framer: SiFramer,
   D3: SiD3, 
   Figma: SiFigma,
+  Firebase : SiFirebase,
   Python: SiPython
 };
 // Projects Data 
 const PROJECTS = [
+
+
+{
+    id: 'word-fumble',
+    number: '0', // Updated to follow your sequence
+    type: 'SOCIAL WEB APP',
+    category: 'Web',
+    date: '2026',
+    title: 'Word Fumble',
+    description: "A social platform to track and leaderboard mispronunciations and linguistic slips.",
+    fullDescription: "Word Fumble is a community-driven web application designed to archive the hilarious linguistic mistakes ('fumbles') made within a friend group. Built with a robust administrative backend, it allows users to log in, tag friends in fumbles, and compete on a real-time leaderboard, turning everyday slips of the tongue into a shared social experience.",
+    cardHeadline: "Social Word-Tracking & Competitive Leaderboard Platform",
+    highlights: [
+      'Real-time Fumble Leaderboard & tagging system.',
+      'Comprehensive Admin Dashboard for User/Content CRUD.',
+      'Secure Firebase Authentication & Cloud Firestore integration.'
+    ],
+    gradient: 'from-[#6366f1] to-[#ec4899]', // Purple to Pink "Social" vibe
+    image: 'https://ik.imagekit.io/fazil/fazil-rm_word-fumble-image.png', // Update with your actual screenshot
+    tech: [
+      { name: 'REACT', Icon: TechIcons.React },
+      { name: 'TYPESCRIPT', Icon: TechIcons.TypeScript },
+      { name: 'FIREBASE', Icon: TechIcons.Firebase }
+    ]
+  },
   {
     id: 'spend-wise',
     number: '01',
@@ -55,7 +82,7 @@ const PROJECTS = [
     tech: [
       { name: 'REACT', Icon: TechIcons.React },
       { name: 'TYPESCRIPT', Icon: TechIcons.TypeScript },
-      { name: 'D3.JS', Icon: TechIcons.D3 }
+      { name: 'FIREBASE', Icon: TechIcons.Firebase }
     ]
   },
   {
@@ -78,7 +105,7 @@ const PROJECTS = [
     tech: [
       { name: 'REACT', Icon: TechIcons.React },
       { name: 'TYPESCRIPT', Icon: TechIcons.TypeScript },
-      { name: 'FRAMER', Icon: TechIcons.Framer },
+      { name: 'FIREBASE', Icon: TechIcons.Firebase },
       { name: 'TAILWIND', Icon: TechIcons.Tailwind }
     ]
   },
@@ -100,7 +127,6 @@ const PROJECTS = [
     gradient: 'from-[#2563eb] to-[#60a5fa]',
     image: 'https://ik.imagekit.io/fazil/Screenshot%202025-12-29%20200534.png',
     tech: [
-      { name: 'NODE.JS', Icon: TechIcons.Node },
       { name: 'NEXT.JS', Icon: TechIcons.Nextjs },
       { name: 'TAILWIND', Icon: TechIcons.Tailwind }
     ]
@@ -124,6 +150,7 @@ const PROJECTS = [
     image: 'https://ik.imagekit.io/fazil/Screenshot%202025-10-23%20232816.png',
     tech: [
       { name: 'REACT', Icon: TechIcons.React },
+      { name: 'FIREBASE', Icon: TechIcons.Firebase },
       { name: 'UX DESIGN', Icon: TechIcons.Figma }
     ]
   },

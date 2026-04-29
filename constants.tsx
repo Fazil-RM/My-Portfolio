@@ -23,7 +23,7 @@ export const CURATED_WORKS = [
     link: 'https://shazil-tech.vercel.app/'
   },
   {
-    image: 'https://ik.imagekit.io/fazil/Screenshot%202025-12-29%20202117.png',
+    image: 'https://ik.imagekit.io/fazil/Untitled_design-removebg-preview.png?updatedAt=1767706591712',
     title: 'Alchemeal',
     description: 'Create the perfect meal from what you have.',
     link: 'work'

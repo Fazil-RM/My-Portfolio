@@ -6,7 +6,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { 
   SiReact, SiTypescript, SiNextdotjs, SiNodedotjs, SiMake,
   SiTailwindcss, SiFramer, SiD3, SiFigma, SiPython, 
-  SiFirebase
+  SiFirebase,
+  SiMongodb
 } from 'react-icons/si';
 
 import SEO from '../components/SEO';
@@ -33,7 +34,8 @@ const TechIcons = {
   D3: SiD3, 
   Figma: SiFigma,
   Firebase : SiFirebase,
-  Python: SiPython
+  Python: SiPython,
+  Mongodb: SiMongodb
 };
 // Projects Data 
 const PROJECTS = [
@@ -151,7 +153,9 @@ const PROJECTS = [
     tech: [
       { name: 'REACT', Icon: TechIcons.React },
       { name: 'FIREBASE', Icon: TechIcons.Firebase },
-      { name: 'UX DESIGN', Icon: TechIcons.Figma }
+      { name: 'UX DESIGN', Icon: TechIcons.Figma },
+      { name: 'PYTHON', Icon: TechIcons.Python },
+      { name: 'MONGODB', Icon: TechIcons.Mongodb }
     ]
   },
   {

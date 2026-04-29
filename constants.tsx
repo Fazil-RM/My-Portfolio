@@ -4,6 +4,13 @@ import { TimelineItem, BlogPost } from './types';
 
 
 export const CURATED_WORKS = [
+
+    {
+    image: 'https://ik.imagekit.io/fazil/fazil-rm_word-fumble-logo.png',
+    title: 'Word Fumble',
+    description: 'A social platform to track and leaderboard mispronunciations and linguistic slips.',
+    link: 'https://wordfumble-dbe50.web.app/'
+  },
   {
     image: 'https://ik.imagekit.io/fazil/Logo-png.png',
     title: 'LearnEzily',

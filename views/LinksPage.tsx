@@ -34,7 +34,7 @@ const LinksPage: React.FC<LinksPageProps> = ({ onNavigate }) => {
         { 
           name: 'GitHub', 
           handle: '@Mohamed-Fazil-RM', 
-          url: 'https://github.com/Mohamed-Fazil-RM', 
+          url: 'https://github.com/Fazil-RM', 
           icon: <Github className="size-5" />,
           isExternal: true
         },
@@ -48,7 +48,7 @@ const LinksPage: React.FC<LinksPageProps> = ({ onNavigate }) => {
         { 
           name: 'Leetcode', 
           handle: '@Mohamed_Fazil_', 
-          url: 'https://leetcode.com/u/Mohamed_Fazil_/', 
+          url: 'https://leetcode.com/u/Fazil-RM/', 
           icon: <Code className="size-5" />,
           isExternal: true
         },
@@ -62,7 +62,7 @@ const LinksPage: React.FC<LinksPageProps> = ({ onNavigate }) => {
         { 
           name: 'Kaggle', 
           handle: 'mohamedfazil', 
-          url: 'https://kaggle.com', 
+          url: 'https://www.kaggle.com/mohamedfazilrm', 
           icon: <Trophy className="size-5" />,
           isExternal: true
         }
@@ -74,7 +74,7 @@ const LinksPage: React.FC<LinksPageProps> = ({ onNavigate }) => {
         { 
           name: 'LinkedIn', 
           handle: 'in/mohamedfazil2005', 
-          url: 'https://www.linkedin.com/in/mohamedfazil2005/', 
+          url: 'https://www.linkedin.com/in/fazil-rm/', 
           icon: <Linkedin className="size-5" />,
           isExternal: true
         },
@@ -88,7 +88,7 @@ const LinksPage: React.FC<LinksPageProps> = ({ onNavigate }) => {
         { 
           name: 'Medium', 
           handle: '@mohamedfazilrm5', 
-          url: 'https://medium.com/@mohamedfazilrm5', 
+          url: 'https://medium.com/@Fazil-RM', 
           icon: <PenTool className="size-5" />,
           isExternal: true
         },

@@ -30,7 +30,7 @@ const CAROUSEL_ITEMS: CarouselItem[] = [
     id: 2, 
     image: 'https://kolukkumalaijeepsafari.com/wp-content/uploads/2024/09/28c91cc5-8c65-4750-8874-f4716b5d9b98.jpg', 
     title: 'I Lead',
-    alt: 'Fazil RM - Founder of LearnEzily & FOS Automations',
+    alt: 'Fazil RM - Founder of LearnEzily.',
     description: 'Co-founding and managing technical architecture for automation projects and student-led tech initiatives.' 
   }
 ];
